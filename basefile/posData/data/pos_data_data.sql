@@ -1,0 +1,25 @@
+create table base_pos_df
+(
+	auto_id int auto_increment primary key comment '自增主键',
+	cid varchar(40) default '',
+	did varchar(40) default '',
+	gmt_bill varchar(40) default '',
+	gmt_trunover varchar(40) default '',
+	money float(10,2),
+	data_value int(6),
+	bill_year int(4),
+	bill_month int(2),
+	bill_day int(2),
+	bill_hour int(2),
+	bill_minute int(2),
+	peoples int(6),
+	order_no varchar(50),
+	singleSales int(5),
+	payment varchar(30),
+	deviceCode varchar(30),
+	insertTime varchar(20),
+	updateTime varchar(20),
+	aistatus int(1),
+	transaction_num int(11) not null default 0,
+	commodity_code varchar(128) not null
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;

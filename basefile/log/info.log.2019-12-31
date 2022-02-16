@@ -1,0 +1,64 @@
+2019-12-31 17:53:37,059 - manpower_forecast_db.py:143 - INFO - success: SELECT a.taskBid, a.startTimeStr, a.endTimeStr, a.dayStr, a.whour, a.min_caclValue, a.max_caclValue, b.taskType FROM (SELECT dayStr, taskBid, startTimeStr, endTimeStr, sum(if(editValue!=0, editValue, caclValue)) as whour, sum(min_caclValue) as min_caclValue, sum(max_caclValue) as max_caclValue FROM labor_cacl_value WHERE dayStr>='2019-12-08' AND dayStr<='2019-12-14' AND status=1 AND cid=118225 AND forecastType=0  AND did=2 GROUP BY dayStr, taskBid, startTimeStr, endTimeStr) a LEFT JOIN ( SELECT bid, taskType FROM labor_task WHERE status=1 AND cid=118225 AND did=2) b ON b.bid = a.taskBid WHERE whour>0 AND taskType IS NOT NULL ORDER BY a.taskBid;
+2019-12-31 17:53:37,062 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,062 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,063 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,063 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,063 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,063 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,064 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,064 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,064 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,064 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,065 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,065 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,065 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,065 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,066 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,066 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,066 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,066 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,067 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,067 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,067 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,068 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,068 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,068 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,069 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,069 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,070 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:53:37,070 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:53:37,070 - manpower_forecast_service.py:335 - INFO - s2-s1 0
+2019-12-31 17:53:37,077 - manpower_forecast_service.py:368 - INFO - s3-s2 0
+2019-12-31 17:53:37,077 - PBStatusService.py:269 - INFO - 直接请求第四阶段，需要程序执行第三阶段，返回的结果为：{'code': 100, 'result': '成功', 'data': {'manpowers': [{'2019-12-08': []}, {'2019-12-09': []}, {'2019-12-10': []}, {'2019-12-11': []}, {'2019-12-12': []}, {'2019-12-13': []}, {'2019-12-14': []}]}}
+2019-12-31 17:55:13,782 - manpower_forecast_db.py:143 - INFO - success: SELECT a.taskBid, a.startTimeStr, a.endTimeStr, a.dayStr, a.whour, a.min_caclValue, a.max_caclValue, b.taskType FROM (SELECT dayStr, taskBid, startTimeStr, endTimeStr, sum(if(editValue!=0, editValue, caclValue)) as whour, sum(min_caclValue) as min_caclValue, sum(max_caclValue) as max_caclValue FROM labor_cacl_value WHERE dayStr>='2019-12-08' AND dayStr<='2019-12-14' AND status=1 AND cid=118225 AND forecastType=0  AND did=2 GROUP BY dayStr, taskBid, startTimeStr, endTimeStr) a LEFT JOIN ( SELECT bid, taskType FROM labor_task WHERE status=1 AND cid=118225 AND did=2) b ON b.bid = a.taskBid WHERE whour>0 AND taskType IS NOT NULL ORDER BY a.taskBid;
+2019-12-31 17:55:13,783 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,784 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,785 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,785 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,787 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,787 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,787 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,787 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,787 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,787 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,788 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,788 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,788 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,788 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,789 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,789 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,789 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,789 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,790 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,790 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,790 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,790 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,791 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,791 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,791 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,791 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,791 - manpower_planner2.py:1216 - INFO - 被清空的实际存在的工时数为: 0 分钟.
+2019-12-31 17:55:13,791 - manpower_planner2.py:1217 - INFO - 被转化为实际任务的虚拟间接工时数为: 0 分钟
+2019-12-31 17:55:13,792 - manpower_forecast_service.py:335 - INFO - s2-s1 0
+2019-12-31 17:55:13,799 - manpower_forecast_service.py:368 - INFO - s3-s2 0
+2019-12-31 17:55:13,800 - PBStatusService.py:269 - INFO - 直接请求第四阶段，需要程序执行第三阶段，返回的结果为：{'code': 100, 'result': '成功', 'data': {'manpowers': [{'2019-12-08': []}, {'2019-12-09': []}, {'2019-12-10': []}, {'2019-12-11': []}, {'2019-12-12': []}, {'2019-12-13': []}, {'2019-12-14': []}]}}

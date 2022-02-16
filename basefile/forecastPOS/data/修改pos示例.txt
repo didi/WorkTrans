@@ -1,0 +1,9 @@
+
+
+
+修改task的必传参数：
+{"token": "be153f645ef9ed8c13160acdddac377c", "timestr": "2019-09-09 10:47:15.837772","cid":"123456","nodeBid":"","forecastModifyArr":[{"taskBid":"201903292247340840341012959f0001","forecastDate":"2019-07-02","startTimeStr":"11:15","endTimeStr":"11:30","forecastValue":"30","editValue":"60","laborStandardBid":"201903292247340840341012959f0009","did":"6"},{"taskBid":"201903292247340840341012959f0002","forecastDate":"2019-07-02","startTimeStr":"11:00","endTimeStr":"11:15","forecastValue":"30","editValue":"0","laborStandardBid":"201903292247340840341012959f0010","did":"14"}]}
+
+
+修改node的必传参数：
+{"token": "be153f645ef9ed8c13160acdddac377c", "timestr": "2019-09-09 10:47:15.837772","cid":"123456","nodeBid":"201903292247340840341012959f0001","nodeStandardBid":"201903292247340840341012959f0009","forecastModifyArr":[{"forecastDate":"2019-07-01","startTimeStr":"09:00","endTimeStr":"09:15","forecastValue":"30","editValue":"60"},{"forecastDate":"2019-07-01","startTimeStr":"09:15","endTimeStr":"09:30","forecastValue":"30","editValue":"0"}]}

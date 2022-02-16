@@ -1,0 +1,23 @@
+create table labor_task(
+    auto_id int auto_increment primary key comment '自增主键',
+    cid varchar(32) default '' not null comment '公司id',
+    taskName varchar(256) default '' not null comment '任务名称',
+    bid varchar(32) default '' not null comment '任务id',
+    abCode varchar(32) default '' comment '任务简码',
+    fillCoefficient varchar(32) default '' comment '填补系数',
+    discard varchar(32) default '' comment '是否可以舍弃， 1可以  2不可以',
+    taskMinWorkTime varchar(32) default '' comment '任务最小时长',
+    taskMaxWorkTime varchar(32) default '' comment '任务最小时长',
+    did varchar(32) default '' not null comment '任务部门',
+    taskType varchar(32) default '' not null comment '直接工时，间接工时，固定工时（directwh, indirectwh, fixedwh）',
+    opt varchar(32) default '' not null comment '操作类型（modify， delete）',
+    worktimeType varchar(32) default '' not null comment '营业时间，自定义时间，固定时间 (bisTime, customTime, fixedTime)',
+    worktimeStart time comment '工作时间开始（HH:mm)',
+    worktimeEnd time comment '工作时间结束（HH:mm）',
+    taskSkillBid varchar(40) default '' not null comment '任务技能bid',
+    skillNum varchar(32) default '' not null comment '技能值 百分比',
+    cert varchar(32) default '' not null comment '证书',
+    create_time datetime comment '创建时间',
+	update_time datetime comment '修改时间',
+	status int default 1 not null comment '状态'
+);

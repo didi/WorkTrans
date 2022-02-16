@@ -1,0 +1,23 @@
+create table `sch_compliance`(
+    `auto_id` int auto_increment primary key comment '自增主键',
+    `cid` varchar(32) default '' not null comment '公司id',
+    `opt` varchar(32) default '' not null comment '操作类型（modify， delete）',
+    `bid` varchar(32) default '' not null comment '合规性规则bid',
+    `ptype` varchar(32) default '' not null comment '规则分类 emprule(员工规则)， organizerule(组织规则)',
+    `eid` varchar(32) default '' not null comment '员工id',
+    `did` varchar(32) default '' not null comment '部门id',
+    `ruleType` varchar(32) default '' not null comment '员工合规性：timerule(工时规则), shiftrule（班次规则）, daysrule（天数规则）, cretrule（证书规则）, 组织合规性：skilldemand（技能需求）, cretdemand（证书需求）,shiftdemand（班次需求）',
+    `ruleCpType` varchar(32) default '' not null comment '比较类型（lt, le, eq, ge, gt。小于，小于等于，等于， 大于等于，大于）',
+    `ruletag` varchar(255) default '' not null comment '员工规则：员工班次工时: shiftTime 班次长度:  shiftLen  班次间隔时数:  interval  已排班次个数: schShiftNum  指定班次个数: apShiftNum  员工连续排班天数: schDayNumCon  连续休息天数: restNumCon  未排班天数: noSchNum  相同排班天数: schNumSame  休息天数: restNum 员工排班要求证书（0：无，1：有）: schCert  员工排班要求所需证书到期天数: certExpireDays 组织规则：对应  证书名称， 技能bid',
+    `ruleCpNum` varchar(32) default '' not null comment '比较数值',
+    `dayFusion` boolean DEFAULT true not null comment 'true 跨天融合 班次可跨天， 班段跨天计算',
+    `cycle` varchar(32) default '' not null comment '统计周期day, week, month',
+    `shiftId` varchar(255) default '' not null comment '班次ID，ruleType = shiftrule或 shiftdemand 必填 ',
+    `cret` varchar(255) default '' not null comment '证书名称',
+    `timeRange` varchar(32) default '' not null comment '时间范围',
+    `startDate` date comment '日期yyyy-MM-dd',
+    `caution` varchar(32) default '' not null comment '警示：（hint 提示, forbid 禁止，warning 警告）',
+    `create_time` datetime comment '创建时间',
+	`update_time` datetime comment '修改时间',
+	`status` int default 1 not null comment '状态0 无效 状态1 生效'
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
