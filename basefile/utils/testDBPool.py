@@ -14,7 +14,7 @@ DBPOOL = PooledDB(
     ping=0,
     # ping MySQL服务端，检查是否服务可用。
     # 如：0 = None = never, 1 = default = whenever it is requested, 2 = when a cursor is created, 4 = when a query is executed, 7 = always
-    host=conf.db.get('mysql',{'host':'127.0.0.1'}).get('host','10.86.53.56'),
+    host=conf.db.get('mysql',{'host':'127.0.0.1'}).get('host','*'),
     # host='127.0.0.1',
     port=conf.db.get('mysql',{'port':'3306'}).get('port','3306'),
     user=conf.db.get('mysql', {'host': '127.0.0.1'}).get('user', 'root'),

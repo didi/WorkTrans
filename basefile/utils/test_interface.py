@@ -9,8 +9,8 @@ class Token():
 
     def getToken(self,timeStr):
         # 待加密信息
-        appkey='c3d60ed77cd@ee94734@f9cf4180'
-        appsecret='194c0006e2d#478d0f99705%216983ce06'
+        appkey='*appkay'
+        appsecret='*appsec'
         str=("make token %s,%s,%s" %(appkey,appsecret,timeStr))
 
         # 创建md5对象
@@ -35,12 +35,7 @@ class Token():
         return str_md5
 
 def post_url(data,i):
-    url = "http://10.161.245.123:8088/pos/push"
-    #url = "http://ailabspre.didichuxing.com/pos/push"
-    url = "http://10.161.190.232:8088/pos/push"
-    url = "http://ailabspre.didichuxing.com/pos/push"
-    url = "http://10.186.1.148:8088/pos/push"
-    #url = "http://10.85.128.81:30660/pos/push"
+    url = "*"
     timestr = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
     token =  Token().getToken(timestr)
     data['timestr'] = timestr
@@ -66,7 +61,7 @@ def post_url(data,i):
     res = requests.post(url,json=data)
     print("thrad_{}_cost_time:{}".format(i,time.time()-start))
     print(res.text)
-with open("/home/luban/fenghao/data/pos_data",'r') as fh:
+with open("*luban_posdata_path",'r') as fh:
      lines = fh.readlines()
 datas=[]
 for line in lines:

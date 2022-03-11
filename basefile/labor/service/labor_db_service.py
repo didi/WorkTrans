@@ -418,7 +418,7 @@ class LaborDbService:
             raw_data['forecast_date_end']=d
             print('日期%s 开始时间:%s' %(d,datetime.now()),raw_data['forecast_date_start'],raw_data['forecast_date_end'])
             infoLog.info('日期%s 开始时间:%s' %(d,datetime.now()))
-            response = requests.post('http://ailabsservice.didi.cn/labor/worktime/forecast', data=json.dumps(raw_data),headers={'content-type': "application/json"})
+            response = requests.post('*', data=json.dumps(raw_data),headers={'content-type': "application/json"})
             infoLog.info('日期%s 结束时间:%s' % (d, datetime.now()))
             print(response.text)
             data.update(json.loads(response.text)['data'])

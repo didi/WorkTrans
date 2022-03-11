@@ -4,7 +4,6 @@
 content='didi'+timestamp+appkey+appsecret    #appkey   appsecret由我们提供
 signature=Lowercase(Binaery2HEX(HMAC-SHA256(secret_key,MD5(content))))
 
-secret_key 加密密钥： 47735f03babbdcbd708d8  我们保留
 
 '''
 import datetime
@@ -30,7 +29,7 @@ class Token(object):
 
 
     def get_hmac_sha256(self,timestr):
-        secret_key='47735f03babbdcbd708d8'   #密钥key，保留，只有自己知道
+        secret_key='*private_sec_key'   #密钥key，保留，只有自己知道
         #  # hmac_sha256加密 第一个参数是密钥key，第二个参数是待加密的字符串，第三个参数是hash函数
         signature = hmac.new(bytes(secret_key, encoding='utf-8'), bytes(self.MD5(self.content(timestr)), encoding='utf-8'),digestmod=hashlib.sha256).digest()
         HEX = signature.hex()  #二进制转为HEX

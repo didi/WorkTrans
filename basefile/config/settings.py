@@ -9,7 +9,7 @@
 """
 
 settings = {
-    "secret_key": "d#aPr8%mssTZgVGy",
+    "secret_key": "woqu_sec_key",
     "jwt_expire": 7 * 24 * 3600,
     "tasks_priority_list": ['值班', '打', '开']
 }

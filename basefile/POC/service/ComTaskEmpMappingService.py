@@ -36,7 +36,6 @@ class ComTaskEmpMappingService:
     def write_result_to_csv(emp_list: List,emp_matchpro: Tuple, date: str,timeSize:int):
 
         with open("/Users/didi/PycharmProjects/woqu6/basefile/POC/new2_" + date + ".csv", "w", encoding='utf-8-sig') as csvfile:
-        #with open("/home/xiaoju/woqu/basefile/POC/service/new_" + date + ".csv", "w",encoding='utf-8-sig') as csvfile:
 
             writer = csv.writer(csvfile)
             # 添加标题

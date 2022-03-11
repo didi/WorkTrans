@@ -3,7 +3,7 @@
 
 import pymysql
 
-db = pymysql.Connection(host='10.86.60.67', database='woqu', user='root', password='Ybaobao1', charset='utf8')
+db = pymysql.Connection(host='mysql_ip', database='woqu', user='root', password='Ybaobao1', charset='utf8')
 
 
 class DBInstence():

@@ -1,4 +1,4 @@
-FROM registry.xiaojukeji.com/didionline/idst-woqu:stable
+FROM registry.xx.com/xx/idst-woqu:stable
 
 COPY ./init /etc/container/init
-COPY ./home-xiaoju-woqu /home/xiaoju/woqu
+COPY ./xx1 /xx2

@@ -53,7 +53,7 @@ from forecastPOS.logic.getPosNum import GetPosNum
 from multiprocessing import cpu_count
 from posView.logic.pos_view_logic import PosViewHandler
 
-sys.path.append('/home/xiaoju/woqu20200421/woqu/basefile')
+sys.path.append('/xx/woqu20200421/woqu/basefile')
 
 apiTuples = [
     (r"/pos/result", PredictHandler),  # pos预测接口

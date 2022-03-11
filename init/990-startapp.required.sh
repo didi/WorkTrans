@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-su - xiaoju -c "/home/xiaoju/woqu/control.sh start"
+su - xx -c "/home/xx/woqu/control.sh start"

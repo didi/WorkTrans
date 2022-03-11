@@ -7,7 +7,6 @@ import numpy as np
 if __name__ == '__main__':
 
     # conn = connect(host='localhost', port=3306, db='woqu', user='root', password='12345678', charset='utf8')
-    conn = connect(host='100.69.238.14', port=4102, db='woqu_schedule', user='woq_sch_6gsjwh_rw', password='ywHRDjTvp5hQZmb', charset='utf8')
     # 获取游标
     cur = conn.cursor()
     start = time.time()
