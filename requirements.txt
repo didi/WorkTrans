@@ -1,4 +1,3 @@
-mysqlclient
 requests==2.22.0
 pandas==0.25.0
 numpy==1.16.4
