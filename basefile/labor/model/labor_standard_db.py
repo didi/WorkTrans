@@ -16,7 +16,6 @@ from utils.myLogger import infoLog, tracebackLog
 from config.db import conf
 from datetime import datetime, timedelta
 from utils.testDBPool import DBPOOL
-from tornado import gen
 
 
 class LaborStandard:

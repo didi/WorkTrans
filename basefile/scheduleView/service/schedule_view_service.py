@@ -15,7 +15,6 @@ from laborTaskView.service.all_title_array import TitleArray
 from scheduleView.model.schedule_view_model import ScheduleViewModel
 from utils.dateTimeProcess import DateTimeProcess
 from utils.webResult import WebResult
-import numpy as np
 import pandas as pd
 
 

@@ -8,12 +8,10 @@
 @time: 2019-12-11 14:36
 @desc:
 """
-from tornado.web import RequestHandler
 import json,datetime, time
 from typing import Dict, Tuple
 from utils.testDBPool import DBPOOL
 from utils.myLogger import infoLog
-from tornado import gen
 
 class GetPoscnt(RequestHandler):
 

@@ -1,14 +1,11 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import tornado
 import json
 import datetime
 from utils.md5Token import Token
 from utils.myLogger import infoLog, tracebackLog
-from tornado import gen
 from concurrent.futures import ThreadPoolExecutor
-from tornado.concurrent import run_on_executor
 from utils.mysql_pool import DBpool
 import time
 from forecastPOS.service.PosProcessDB import PosDB_process

@@ -4,7 +4,6 @@
 import sys;
 
 import pandas as pd
-import numpy as np
 from pandas import DataFrame
 import json
 
@@ -15,7 +14,6 @@ from utils.myLogger import infoLog, tracebackLog
 from forecastPOS.algorithm.prophet import ProphetForecast
 from forecastPOS.algorithm.lstm import LstmForecast
 from config.pos_auto_conf import PosAutoConfig
-from tornado import gen
 import threading
 from utils.testDBPool import DBPOOL
 from specialEvent.model.special_event_scope_model import SpecialEventScopeModel

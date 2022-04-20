@@ -1,10 +1,6 @@
 from datetime import datetime,timedelta
-from tornado.ioloop import IOLoop, PeriodicCallback
-from tornado.web import RequestHandler, Application
-from apscheduler.schedulers.tornado import TornadoScheduler
 from utils.testDBPool import DBPOOL
 from utils.myLogger import infoLog
-import numpy as np
 import pandas as pd
 import sys
 

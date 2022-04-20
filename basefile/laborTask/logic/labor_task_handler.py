@@ -9,7 +9,6 @@
 '''
 import json
 
-from tornado.web import RequestHandler
 
 from laborTask.service.labor_task_service import LaborTaskService
 from utils.apiFilter import apiFilter

@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import tornado.web
 import json
 import traceback
 import datetime
@@ -9,7 +8,6 @@ import time
 from utils.myLogger import infoLog, tracebackLog
 from utils.dateUtils import DateUtils
 from utils.check_token import check_token
-from tornado import gen
 from forecastPOS.service.PosPredict import PosPredict
 
 

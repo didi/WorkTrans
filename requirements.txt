@@ -1,9 +1,6 @@
-requests==2.22.0
 pandas==0.25.0
-numpy==1.16.4
 PyMySQL==0.9.3
 fbprophet==0.5
-tornado==6.0.3
 orator==0.9.9
 plotly
 DBUtils==1.3

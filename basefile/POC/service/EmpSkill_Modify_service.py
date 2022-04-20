@@ -7,8 +7,7 @@ from datetime import datetime
 from typing import Dict
 from utils.myLogger import infoLog
 from POC.model.EmpSkill_db import EmpSkillDB
-from tornado import gen
-import requests, json
+import json
 class EmpSkillModifyService:
     @staticmethod
     @gen.coroutine

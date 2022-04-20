@@ -9,7 +9,6 @@
 '''
 import json
 
-from tornado.web import RequestHandler
 
 from schCompliance.service.sch_compliance_service import SchComplianceService
 from utils.apiFilter import apiFilter

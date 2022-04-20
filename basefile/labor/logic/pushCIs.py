@@ -9,7 +9,6 @@
 @desc:
 """
 
-import tornado.web
 import json
 import datetime
 import time
@@ -17,7 +16,6 @@ from typing import Dict, Tuple
 from utils.check_token import check_token
 from labor.service.labor_db_service import LaborDbService
 from utils.myLogger import infoLog, tracebackLog
-from tornado import gen
 
 class PushHandler(tornado.web.RequestHandler):
 

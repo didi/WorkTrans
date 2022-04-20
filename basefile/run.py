@@ -2,8 +2,6 @@
 # -*- created by: mo -*-
 
 
-import tornado.ioloop
-import tornado.web
 import argparse
 import sys
 from forecastPOS.logic.predictCls import PredictHandler

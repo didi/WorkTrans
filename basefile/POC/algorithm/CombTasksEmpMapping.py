@@ -1,17 +1,15 @@
-'''
+﻿'''
 create by liyabin
 '''
 import json
 from typing import Dict,Tuple,List
 import random
-import numpy as np
 from POC.bean.TemporaryEmployee import TemporaryEmployee
 from POC.bean.CheckRule import CheckRule
 from POC.bean.CheckTempEmpRule import CheckTempEmpRule
 from POC.bean.ShiftPriority import ShiftPriority
 from utils.myLogger import infoLog
 from config.settings import settings
-import requests
 
 class Mapping:
 

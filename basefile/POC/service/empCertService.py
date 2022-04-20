@@ -9,7 +9,6 @@ from datetime import datetime
 from typing import Dict
 from utils.myLogger import infoLog
 from POC.model.empCertDB import empCertDB
-from tornado import gen
 
 
 class empCertService:

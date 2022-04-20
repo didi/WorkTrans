@@ -8,14 +8,12 @@
 @time: 2019/9/10 11:59 上午
 @desc:
 """
-from tornado.web import RequestHandler
 from typing import Tuple
 import json
 
 from utils.check_token import check_token
 from utils.myLogger import infoLog
 from laborCnt.service.shift_mod_service import ShiftModService
-from tornado import gen
 
 
 class ShiftModModifyHandler(RequestHandler):

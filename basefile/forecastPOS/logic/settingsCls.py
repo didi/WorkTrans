@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import tornado
 
 from utils.myLogger import infoLog
 

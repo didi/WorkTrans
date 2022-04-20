@@ -5,12 +5,10 @@ by lyy
 
 import json
 from typing import Tuple, List, Dict, Any
-from tornado.web import RequestHandler
 import datetime,time
 from utils.check_token import check_token
 from utils.myLogger import infoLog
 from POC.service.EmpSkill_Modify_service import EmpSkillModifyService
-from tornado import gen
 
 
 class EmpSkillModifyHandler(RequestHandler):

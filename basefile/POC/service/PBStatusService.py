@@ -10,16 +10,12 @@ from utils.dateTimeProcess import DateTimeProcess
 from POC.model.status_db import StatusDB
 from POC.model.forecast_task_DB import ForecastTaskDB
 import time, datetime
-from tornado import gen, web
 import threading
 from utils.md5Token import Token
-import requests, json
+import json
 from utils.myLogger import infoLog
 #from laborCnt.service.manpower_forecast_service import ManPowerForecastService
 from laborCnt.service.manpower_forecast_service2 import ManPowerForecastService
-import requests
-from urllib.request import Request
-from urllib.request import urlopen
 from POC.bean.LaborTask import LaborTask
 from POC.service.CombTaskService import CombTaskService
 from POC.bean.EmpComplianceRule import EmpComplianceRule

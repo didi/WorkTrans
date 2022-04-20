@@ -1,6 +1,5 @@
 from forecastPOS.service.posDBService import PosDBService
 import datetime
-import numpy as np
 from utils.dateUtils import DateUtils
 from utils.myLogger import infoLog, tracebackLog
 from config.pos_auto_conf import PosAutoConfig

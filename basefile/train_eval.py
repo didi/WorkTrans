@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 import sys
 #sys.path.append("/Users/didi/feng/didi_code/woqu20200421/woqu/basefile/")

@@ -9,7 +9,6 @@
 import json
 from abc import ABC
 
-from tornado.web import RequestHandler
 
 from scheduleView.service.schedule_view_service import ScheduleViewService
 from utils.authenticated import authenticated

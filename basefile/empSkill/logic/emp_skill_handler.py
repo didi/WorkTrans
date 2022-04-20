@@ -9,7 +9,6 @@
 """
 import json
 
-from tornado.web import RequestHandler
 
 from empSkill.service.emp_skill_service import EmpSkillService
 from utils.apiFilter import apiFilter

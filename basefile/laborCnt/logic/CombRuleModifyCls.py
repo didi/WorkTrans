@@ -8,7 +8,6 @@
 @time: 2019/9/10 20:49
 @desc:
 """
-from tornado.web import RequestHandler
 import json
 import datetime
 import time
@@ -16,7 +15,6 @@ from typing import List, Dict, Tuple
 from utils.check_token import check_token
 from utils.myLogger import infoLog
 from laborCnt.service.comb_rule_service import CombRuleService
-from tornado import gen
 
 
 class CombRuleModifyHandler(RequestHandler):

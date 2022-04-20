@@ -9,7 +9,6 @@
 '''
 import json
 
-from tornado.web import RequestHandler
 
 from laborCaclValue.service.labor_cacl_value_service import LaborCaclValueService
 from utils.authenticated import authenticated

@@ -17,7 +17,6 @@ from utils.collectionUtils import CollectionUtils
 from utils.dateTimeProcess import DateTimeProcess
 from utils.dateUtils import DateUtils
 from utils.webResult import WebResult
-import numpy as np
 import pandas as pd
 
 

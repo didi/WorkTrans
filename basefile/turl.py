@@ -1,5 +1,3 @@
-import requests, json
-from urllib import parse
 
 
 

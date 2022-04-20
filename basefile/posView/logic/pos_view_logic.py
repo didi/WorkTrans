@@ -9,7 +9,6 @@
 '''
 import json
 
-from tornado.web import RequestHandler
 
 from posView.service.pos_view_service import PosViewService
 from utils.apiFilter import apiFilter

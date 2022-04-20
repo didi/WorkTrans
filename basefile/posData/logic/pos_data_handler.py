@@ -10,7 +10,6 @@
 """
 from abc import ABC
 
-from tornado.web import RequestHandler
 from typing import Tuple
 import json
 

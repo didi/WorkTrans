@@ -10,7 +10,6 @@
 
 import json
 
-from tornado.web import RequestHandler
 
 from laborShiftSplitRule.service.shift_split_rule_service import ShiftSplitRuleService
 from utils.apiFilter import apiFilter

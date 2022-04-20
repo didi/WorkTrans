@@ -9,7 +9,6 @@
 """
 import json
 
-from tornado.web import RequestHandler
 
 from employeeCertificate.service.employee_certificate_service import EmployeeCertificateService
 from utils.authenticated import authenticated

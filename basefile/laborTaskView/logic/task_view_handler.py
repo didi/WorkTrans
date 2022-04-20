@@ -9,8 +9,6 @@
 import json
 from abc import ABC
 
-from tornado.web import RequestHandler
-
 from laborTaskView.service.task_view_service import TaskViewService
 from utils.apiFilter import apiFilter
 from utils.authenticated import authenticated

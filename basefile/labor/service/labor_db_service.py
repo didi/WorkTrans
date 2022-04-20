@@ -16,9 +16,7 @@ from datetime import datetime, timedelta
 from labor.model.labor_standard_db import LaborStandard
 from forecastPOS.model.posDB import PosDBModel
 from utils.myLogger import infoLog, tracebackLog
-from tornado import gen
 import threading
-import requests
 
 
 class LaborDbService:

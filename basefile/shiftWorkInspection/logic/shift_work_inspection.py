@@ -10,7 +10,6 @@
 '''
 
 import json
-from tornado.web import RequestHandler
 
 from shiftWorkInspection.service.shift_work_inspection import ShiftWorkInspectionService
 from utils.authenticated import authenticated

@@ -9,11 +9,10 @@ from datetime import datetime
 from utils.myLogger import infoLog
 from laborCnt.model.man_power_db import ManPowerDB
 from POC.model.calDB import CalDB
-from tornado import gen
 from utils.dateUtils import DateUtils
 from utils.dateTimeProcess import DateTimeProcess
 import time
-import requests, json
+import json
 class CalService:
 
     @staticmethod

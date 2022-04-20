@@ -14,7 +14,6 @@ from laborCnt.model.man_power_db import ManPowerDB
 from laborCnt.model.manpower_forecast_db import ManPowerForecastDB
 from utils.myLogger import infoLog
 import asyncio
-from tornado import gen
 
 
 class ManPowerService:

@@ -9,11 +9,9 @@
 @desc:
 """
 
-from tornado.web import RequestHandler
 import json
 from utils.testDBPool import DBPOOL
 from utils.myLogger import infoLog, tracebackLog
-from tornado import gen
 from utils.global_keys import *
 from utils.mysql_factory import Push_task_status_Query
 

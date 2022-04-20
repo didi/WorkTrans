@@ -9,7 +9,6 @@
 '''
 import json
 
-from tornado.web import RequestHandler
 
 from schAvailableTime.service.sch_available_time_service import SchAvailableTimeService
 from utils.apiFilter import apiFilter

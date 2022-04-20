@@ -8,7 +8,6 @@
 @time: 2019-08-26 20:15
 @desc:
 """
-from tornado.web import RequestHandler
 import json
 from typing import Dict, Tuple
 import datetime
@@ -16,7 +15,6 @@ import time
 from utils.check_token import check_token
 from labor.service.labor_db_service import LaborDbService
 from utils.myLogger import infoLog, tracebackLog
-from tornado import gen
 
 class LForecastModifyHandler(RequestHandler):
 

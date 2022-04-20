@@ -14,7 +14,6 @@ from typing import List
 
 from laborCnt.model.shift_mod_data import ShiftModData
 from utils.myLogger import infoLog
-from tornado import gen
 
 
 class ShiftModService:

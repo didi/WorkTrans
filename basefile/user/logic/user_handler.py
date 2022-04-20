@@ -11,8 +11,6 @@
 
 import json
 
-from tornado.web import RequestHandler
-
 from user.service.user_login_log_service import UserLoginLogService
 from user.service.user_service import UserService
 from utils.myLogger import infoLog

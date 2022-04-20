@@ -5,13 +5,11 @@
 @time: 2019-10-09 14:48
 @desc:
 """
-from tornado.web import RequestHandler
 import json,datetime,time
 from typing import Dict, Tuple
 from utils.check_token import check_token
 from utils.myLogger import infoLog
 from POC.service.empCertService import empCertService
-from tornado import gen
 
 class  EmpCertModifyHandler(RequestHandler):
 

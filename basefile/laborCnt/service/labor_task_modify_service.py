@@ -9,7 +9,6 @@ from datetime import datetime
 from typing import Dict
 from utils.myLogger import infoLog
 from laborCnt.model.labor_task_db import LaborTaskDB
-from tornado import gen
 
 class LaborTaskModifyService:
 

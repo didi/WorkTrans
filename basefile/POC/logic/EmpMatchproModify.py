@@ -6,11 +6,9 @@ by lyy
 
 import json, datetime, time
 from typing import Tuple, Dict
-from tornado.web import RequestHandler
 from utils.check_token import check_token
 from utils.myLogger import infoLog
 from POC.service.EmpMatchpro_Modify_Service import EmpMatchproModifyService
-from tornado import gen
 
 
 class EmpMatchproModifyHandler(RequestHandler):

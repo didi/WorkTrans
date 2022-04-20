@@ -3,7 +3,6 @@ from utils.testDBPool import DBPOOL
 import json
 from utils.myLogger import infoLog
 import datetime
-from tornado import gen
 
 class HistoryShiftUtils():
     def __init__(self):

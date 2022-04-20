@@ -8,12 +8,10 @@
 @time: 2019-08-20 20:15
 @desc:
 """
-from tornado.web import RequestHandler
 import json,datetime, time
 from typing import Dict, Tuple
 from labor.service.labor_db_service import LaborDbService
 from utils.check_token import check_token
-from tornado import gen
 from utils.myLogger import infoLog
 
 

@@ -3,7 +3,6 @@ from POC.bean.Employee import Employee
 from POC.bean.TemporaryEmployee import TemporaryEmployee
 from POC.bean.CombTasks import CombTasks
 import datetime,calendar
-import numpy as np
 from POC.bean.CheckRule import CheckRule
 
 

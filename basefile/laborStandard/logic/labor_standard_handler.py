@@ -10,7 +10,6 @@
 import json
 import traceback
 
-from tornado.web import RequestHandler
 
 from laborStandard.service.labor_standard_service import LaborStandardService
 from utils.apiFilter import apiFilter

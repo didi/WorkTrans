@@ -9,7 +9,6 @@ from datetime import datetime
 from typing import Dict
 from utils.myLogger import infoLog
 from POC.model.AvailableTimeDB import AvailableTimeDB
-from tornado import gen
 
 class AvailableTimeService:
 

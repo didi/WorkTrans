@@ -10,7 +10,6 @@
 
 import json
 
-from tornado.web import RequestHandler
 
 from base.service.base_service import BaseService
 from utils.webResult import WebResult

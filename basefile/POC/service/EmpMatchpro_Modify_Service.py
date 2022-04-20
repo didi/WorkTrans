@@ -7,7 +7,6 @@ from datetime import datetime
 from typing import Dict
 from utils.myLogger import infoLog
 from POC.model.EmpMatchpro_db import EmpMatchproDB
-from tornado import gen
 
 class EmpMatchproModifyService:
     @staticmethod

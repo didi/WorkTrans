@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import tornado
 import json
 import datetime
 from utils.md5Token import Token

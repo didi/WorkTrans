@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import tornado
 import json
 import datetime
 import time
@@ -9,7 +8,6 @@ from utils.md5Token import Token
 from forecastPOS.service.posDBService import PosDBService
 import traceback
 from utils.myLogger import infoLog, tracebackLog
-from tornado import gen
 
 
 class ForecastModifyHandler(tornado.web.RequestHandler):

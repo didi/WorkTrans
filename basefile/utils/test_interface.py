@@ -2,7 +2,6 @@ import json
 import threading
 import hashlib
 import datetime
-import requests
 import time
 import random
 class Token():

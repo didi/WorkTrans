@@ -7,7 +7,6 @@
 @time: 2020/03/12
 @desc:
 """
-from tornado.web import RequestHandler
 import pandas as pd
 
 from utils.myLogger import infoLog

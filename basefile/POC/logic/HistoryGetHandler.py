@@ -5,7 +5,6 @@
 @time: 2019-10-11 10:48
 @desc:
 """
-from tornado.web import RequestHandler
 from utils.myLogger import infoLog
 import datetime, time
 from typing import Tuple, Dict, Any, List
@@ -14,7 +13,6 @@ from utils.check_token import check_token
 from POC.service.calService import CalService
 from utils.testDBPool import DBPOOL
 from utils.HistoryShiftUtils import HistoryShiftUtils
-from tornado import gen
 
 class HistoryGetHandller(RequestHandler):
 

@@ -9,7 +9,6 @@
 """
 import json
 
-from tornado.web import RequestHandler
 
 from empMatchpro.service.emp_matchpro_service import EmpMatchproService
 from utils.authenticated import authenticated

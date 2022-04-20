@@ -6,7 +6,6 @@ from typing import Dict,List,Tuple
 import datetime
 from utils.dateTimeProcess import DateTimeProcess
 from POC.model.forecast_task_DB import ForecastTaskDB
-import numpy as np
 
 class TemporaryEmployee:
 

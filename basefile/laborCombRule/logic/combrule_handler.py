@@ -9,7 +9,6 @@
 '''
 import json
 
-from tornado.web import RequestHandler
 
 from laborCombRule.service.combrule_service import CombruleService
 from utils.apiFilter import apiFilter

@@ -5,14 +5,12 @@
 @time: 2019-09-12 11:08
 @desc:
 """
-from tornado.web import RequestHandler
 from utils.myLogger import infoLog
 import datetime, time
 from typing import Tuple, Dict, Any, List
 import json
 from utils.check_token import check_token
 from laborCnt.service.man_power_service import ManPowerService
-from tornado import gen
 
 
 class ManPowerModifyHandler(RequestHandler):

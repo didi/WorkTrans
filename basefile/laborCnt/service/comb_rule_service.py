@@ -11,7 +11,6 @@
 
 from typing import List
 from laborCnt.model.labor_comb_rule_db import LaborCombRule
-from tornado import gen
 
 
 class CombRuleService:

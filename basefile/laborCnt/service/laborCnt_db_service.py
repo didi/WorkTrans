@@ -1,6 +1,5 @@
 from laborCnt.model.labor_shift_split_rule_db import LaborShiftSplitRule
 import logging
-from tornado import gen
 
 
 class LaborCntDbService:

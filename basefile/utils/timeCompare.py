@@ -1,6 +1,5 @@
 import time
 from pymysql import connect
-import numpy as np
 #  建立链接
 
 
